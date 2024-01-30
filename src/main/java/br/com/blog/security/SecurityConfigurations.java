@@ -41,6 +41,11 @@ public class SecurityConfigurations {
     }
 
     @Bean
+    public CorsFilter corsFilter() {
+        return new CorsFilter(new UrlBasedCorsConfigurationSource());
+    }
+
+    @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
