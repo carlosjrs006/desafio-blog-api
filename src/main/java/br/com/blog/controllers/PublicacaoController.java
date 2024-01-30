@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
-@CrossOrigin(origins = "*")
+
 @RestController
 @RequestMapping("/publicacao")
 public class PublicacaoController {
