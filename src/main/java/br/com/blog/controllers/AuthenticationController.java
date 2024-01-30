@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@CrossOrigin(origins = "https://desafio-blog-api-production.up.railway.app")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("auth")
 public class AuthenticationController {

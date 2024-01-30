@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-@CrossOrigin(origins = "https://desafio-blog-api-production.up.railway.app")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/file")
 public class StorageController {
