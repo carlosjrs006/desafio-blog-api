@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
-@CrossOrigin(origins = "https://main--coruscating-genie-83c44c.netlify.app")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/publicacao")
 public class PublicacaoController {

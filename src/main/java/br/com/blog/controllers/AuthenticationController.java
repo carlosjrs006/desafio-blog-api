@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
-@CrossOrigin(origins = "https://main--coruscating-genie-83c44c.netlify.app")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("auth")
 public class AuthenticationController {
