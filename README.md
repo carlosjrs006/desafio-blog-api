@@ -1,6 +1,6 @@
-# api-pessoas
+# api-blog
 <img src="https://www.paranaurgente.com.br/cache/serasa-limpa-nome-acao-para-consumidor-limpar-nome-e-quitar-dividas-e-so-ate-amanha-5dec7-1280x720.png" width="500px" heigth ="200px" />
-<h1>Projeto Serasa Score</h1>
+<h1>Projeto Blog Desafio</h1>
 <p>Projeto feito para teste avaliativo na empresa da <a href="https://www.linkedin.com/company/serasaexperian/" target="_blank">Serasa Experian</a>, com intuito de fazer um sistema que cadastre um usuario e quando encontrado tal usuario passe as informações mais a descricao do seu score.</p>
 <h1>Tecnologias Usadas</h1>
 <ul>
