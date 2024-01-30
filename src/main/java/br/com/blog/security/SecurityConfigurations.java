@@ -27,10 +27,11 @@ public class SecurityConfigurations {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
-        return  httpSecurity
-                .csrf(csrf -> csrf.disable())
-                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .authorizeHttpRequests(authorize -> authorize
+        return httpSecurity
+                .cors().configurationSource(corsConfigurationSource()).and()
+                .csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+                .authorizeRequests(authorize -> authorize
                         .antMatchers(HttpMethod.POST, "/auth/login").permitAll()
                         .antMatchers(HttpMethod.POST, "/auth/register").permitAll()
                         .antMatchers(HttpMethod.GET, "/publicacao/subscribe").permitAll()
@@ -41,8 +42,20 @@ public class SecurityConfigurations {
     }
 
     @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedOrigin("https://main--coruscating-genie-83c44c.netlify.app");
+        configuration.addAllowedMethod("*");
+        configuration.addAllowedHeader("*");
+        configuration.addExposedHeader("Authorization");  // Adicione qualquer header personalizado que você precise expor
+
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration);
+        return source;
+    }
+    @Bean
     public CorsFilter corsFilter() {
-        return new CorsFilter(new UrlBasedCorsConfigurationSource());
+        return new CorsFilter(corsConfigurationSource());
     }
 
     @Bean
