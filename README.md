@@ -1,13 +1,13 @@
-# api-pessoas
+# api-blog
 <img src="https://www.paranaurgente.com.br/cache/serasa-limpa-nome-acao-para-consumidor-limpar-nome-e-quitar-dividas-e-so-ate-amanha-5dec7-1280x720.png" width="500px" heigth ="200px" />
-<h1>Projeto Serasa Score</h1>
-<p>Projeto feito para teste avaliativo na empresa da <a href="https://www.linkedin.com/company/serasaexperian/" target="_blank">Serasa Experian</a>, com intuito de fazer um sistema que cadastre um usuario e quando encontrado tal usuario passe as informações mais a descricao do seu score.</p>
+<h1>Projeto Blog Desafio</h1>
+<p>Projeto feito para teste avaliativo, com intuito de fazer um sistema que cadastre um usuario e o usuario consiga postar informações.</p>
 <h1>Tecnologias Usadas</h1>
 <ul>
   <li>Java 11</li>
   <li>Spring Framework</li>
-  <li>JUnit</li>
-  <li>H2 database</li>
+  <li>AWS RDS,S3</li>
+  <li>Postgres SQL</li>
   <li>Model Mapper</li>
   <li>Swagger</li>
   <li>Postman</li>
